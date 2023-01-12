@@ -1,11 +1,14 @@
 import React from 'react';
 
-const Card = () => {
+const Card = ({content}) => {
     return (
-        <div className='border border-2 border-gray-600 w-[30%]'>
-            <img src='https://pixlr.com/images/index/remove-bg.webp' className='w-full' alt='girl'/>
-            <p className="py-4">lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem </p>
-        </div>
+        <div className='border border-2 border-gray-600 shadow-lg relative rounded-3xl p-3 flex flex-col '>
+            <div className='h-52 w-52 mx-auto'>
+            <img src={content.image} alt='girl'/>
+            </div>
+            <h1 className='font-bold text-4xl text-center'>{content.model}</h1>
+            <p className='text-center font-semibold mb-3'>Rating: {content.status}</p>
+            </div>
     );
 };
 
