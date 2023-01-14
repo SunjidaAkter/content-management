@@ -3,28 +3,18 @@ import './App.css';
 import Card from './Components/Card';
 import { useSelector } from 'react-redux';
 import { useEffect, useState } from 'react';
+import Navbar from './Components/Shared/Navbar';
+import { Route, Routes } from 'react-router-dom';
+import Home from './Components/Pages/Home';
 
 function App() {
-  const [contents,setContents]=useState([]);
-  useEffect(()=>{
-    fetch('contents.json')
-    .then(res=>res.json())
-    .then(data=>setContents(data))
-  },[])
-  const state = useSelector((state)=>state)
-  console.log(state);
   return (
     <div className="App">
-     <p className='text-4xl p-10'>HELLO</p>
-     <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-14'>
-      {
-        contents.map(content=>(
-          <Card key={content.id} content={content}></Card>
-        ))
-      }
+     <Navbar></Navbar>
+     <Routes>
+     <Route path="/" element={<Home />} />
+     </Routes>
      </div>
-     
-    </div>
   );
 }
 
