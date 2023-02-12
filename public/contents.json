@@ -1,51 +1,50 @@
 [
-    {
-      "_id":1 ,
-      "model": "Hello",
-      "image": "https://pixlr.com/images/index/remove-bg.webp",
-      "status": "lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem "
-    },
-    {
-      "_id":2 ,
-      "model": "Hello",
-      "image": "https://pixlr.com/images/index/remove-bg.webp",
-      "status": "lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem "
-    },
-    {
-      "_id":3 ,
-      "model": "Hello",
-      "image": "https://pixlr.com/images/index/remove-bg.webp",
-      "status": "lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem "
-    },
-    {
-      "_id": 4,
-      "model": "Hello",
-      "image": "https://pixlr.com/images/index/remove-bg.webp",
-      "status": "lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem "
-    },
-    {
-      "_id":5 ,
-      "model": "Hello",
-      "image": "https://pixlr.com/images/index/remove-bg.webp",
-      "status": "lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem "
-    },
-    {
-      "_id":6 ,
-      "model": "Hello",
-      "image": "https://pixlr.com/images/index/remove-bg.webp",
-      "status": "lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem "
-    },
-    {
-      "_id": 7,
-      "model": "Hello",
-      "image": "https://pixlr.com/images/index/remove-bg.webp",
-      "status": "lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem "
-    },
-    {
-      "_id": 8,
-      "model": "Hello",
-      "image": "https://pixlr.com/images/index/remove-bg.webp",
-      "status": "lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem "
-    }
-  ]
-  
+  {
+    "_id": 1,
+    "model": "Hello",
+    "image": "https://pixlr.com/images/index/remove-bg.webp",
+    "status": "lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem "
+  },
+  {
+    "_id": 2,
+    "model": "Hello",
+    "image": "https://pixlr.com/images/index/remove-bg.webp",
+    "status": "lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem "
+  },
+  {
+    "_id": 3,
+    "model": "Hello",
+    "image": "https://pixlr.com/images/index/remove-bg.webp",
+    "status": "lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem "
+  },
+  {
+    "_id": 4,
+    "model": "Hello",
+    "image": "https://pixlr.com/images/index/remove-bg.webp",
+    "status": "lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem "
+  },
+  {
+    "_id": 5,
+    "model": "Hello",
+    "image": "https://pixlr.com/images/index/remove-bg.webp",
+    "status": "lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem "
+  },
+  {
+    "_id": 6,
+    "model": "Hello",
+    "image": "https://pixlr.com/images/index/remove-bg.webp",
+    "status": "lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem "
+  },
+  {
+    "_id": 7,
+    "model": "Hello",
+    "image": "https://pixlr.com/images/index/remove-bg.webp",
+    "status": "lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem "
+  },
+  {
+    "_id": 8,
+    "model": "Hello",
+    "image": "https://pixlr.com/images/index/remove-bg.webp",
+    "status": "lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem "
+  }
+]
