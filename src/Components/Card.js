@@ -10,7 +10,7 @@ const Card = ({content}) => {
             className="item-group"
             xyz="fade flip-up flip-left delay-3"
      >
-        {scrolled &&
+        {
         <div className='border border-2 border-gray-600 shadow-lg relative rounded-3xl p-3 flex flex-col '>
             <div className='h-52 w-full mx-auto'>
                 <img src={content.image} alt='girl'/>

@@ -1,5 +1,5 @@
 const initialState={
-    content:[],
+    contents:[],
 };
 
 const contentReducer=(state=initialState,action)=>{
@@ -7,7 +7,12 @@ const contentReducer=(state=initialState,action)=>{
         case "ADD_CONTENT":
             return {
                 ...state,
-                content:[...state.content,action.payload]
+                contents:[...state.contents,action.payload]
+            }
+        case "GET_CONTENT":
+            return {
+                ...state,
+                contents: action.payload,
             }
         default:
             return state;
