@@ -15,8 +15,8 @@ const Card = ({ content }) => {
           <div className="h-52 w-full mx-auto">
             <img src={content.img} alt="girl" />
           </div>
-          <h1 className="font-bold text-4xl text-center">{content.model}</h1>
-          <p className="text-center font-semibold mb-3">{content.status}</p>
+          <h1 className="font-bold text-4xl text-center">{content.title}</h1>
+          <p className="text-center font-semibold mb-3">{content.desc}</p>
           <button className="my-3 p-4 bg-zinc-500 w-1/2 "></button>
         </div>
       }
