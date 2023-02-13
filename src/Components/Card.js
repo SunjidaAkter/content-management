@@ -17,7 +17,7 @@ const Card = ({ content }) => {
           </div>
           <h1 className="font-bold text-4xl text-center">{content.title}</h1>
           <p className="text-center font-semibold mb-3">{content.desc}</p>
-          <button className="my-3 p-4 bg-zinc-500 w-1/2 "></button>
+          <button className="my-3 p-4 bg-zinc-500 w-1/2 ">update</button>
         </div>
       }
     </XyzTransition>
