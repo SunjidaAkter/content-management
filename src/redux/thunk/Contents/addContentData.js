@@ -1,5 +1,3 @@
-import Swal from "sweetalert2";
-import withReactContent from "sweetalert2-react-content";
 import { addContent } from "../../actions/contentActions";
 
 const addContentData = (content) => {
@@ -19,7 +17,6 @@ const addContentData = (content) => {
           ...content,
         })
       );
-      Swal.fire("Hello, world!");
     }
   };
 };
