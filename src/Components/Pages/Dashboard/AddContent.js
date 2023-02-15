@@ -21,7 +21,13 @@ const AddContent = () => {
     };
     console.log(content);
     dispatch(addContentData(content));
-    Swal.fire("Your content is added!");
+    // Swal.fire("Your content is added!");
+    Swal.fire({
+      title: "Your content has been added!",
+      icon: "success",
+      confirmButtonText: "Cool",
+      confirmButtonColor: "#787777",
+    });
   };
   return (
     <div className="mt-12 py-5 px-1 flex justify-center items-center">
