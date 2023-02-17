@@ -1,9 +1,12 @@
 import React, { useEffect, useState } from "react";
 import { XyzTransition } from "@animxyz/react";
 import useAnime from "./useAnime";
+import { useDispatch } from "react-redux";
+import deleteContentData from "../redux/thunk/Contents/deleteContentData";
 
 const Card = ({ content }) => {
   const [scrolled] = useAnime(50, 50, 50, 50);
+  const dispatch = useDispatch();
   return (
     <XyzTransition
       duration={1000}
@@ -17,7 +20,12 @@ const Card = ({ content }) => {
           </div>
           <h1 className="font-bold text-4xl text-center">{content.title}</h1>
           <p className="text-center font-semibold mb-3">{content.desc}</p>
-          <button className="my-3 p-4 bg-zinc-500 w-1/2 ">update</button>
+          <button
+            className="text-white font-bold my-3 p-4 bg-zinc-500 w-1/2"
+            onClick={() => dispatch(deleteContentData(content._id))}
+          >
+            Delete
+          </button>
         </div>
       }
     </XyzTransition>

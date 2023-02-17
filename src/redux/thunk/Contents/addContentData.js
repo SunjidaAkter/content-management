@@ -9,7 +9,8 @@ const addContentData = (content) => {
         "Content-type": "application/json",
       },
     });
-    const data = res.json();
+
+    const data = await res.json();
     if (data.acknowledged) {
       dispatch(
         addContent({

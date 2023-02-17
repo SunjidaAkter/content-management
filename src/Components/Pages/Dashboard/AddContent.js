@@ -7,6 +7,7 @@ import addContentData from "../../../redux/thunk/Contents/addContentData";
 const AddContent = () => {
   const dispatch = useDispatch();
   const {
+    reset,
     register,
     handleSubmit,
     formState: { errors },
@@ -28,6 +29,7 @@ const AddContent = () => {
       confirmButtonText: "Cool",
       confirmButtonColor: "#787777",
     });
+    reset();
   };
   return (
     <div className="mt-12 py-5 px-1 flex justify-center items-center">
@@ -59,7 +61,9 @@ const AddContent = () => {
           {errors.desc && (
             <span className="text-red-600">Your blog is required</span>
           )}
-          <input type="submit" />
+          <button className="" type="submit">
+            Delete
+          </button>
         </form>
       </div>
     </div>
