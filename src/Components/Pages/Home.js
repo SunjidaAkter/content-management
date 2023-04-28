@@ -16,6 +16,17 @@ function Home() {
   console.log(state);
   return (
     <div className="App px-12 pb-5">
+      <div className="flex justify-end">
+        <button className="bg-slate-600 text-white rounded-md px-3 py-1 mt-3 ml-5">
+          hello
+        </button>
+        <button className="bg-slate-600 text-white rounded-md px-3 py-1 mt-3 ml-5">
+          hello
+        </button>
+        <button className="bg-slate-600 text-white rounded-md px-3 py-1 mt-3 ml-5">
+          hello
+        </button>
+      </div>
       <p className="text-4xl p-10">HELLO</p>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-14">
         {contents.map((content) => (
