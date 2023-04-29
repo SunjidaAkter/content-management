@@ -1,5 +1,5 @@
 import React from "react";
-import { useForm } from "react-hook-form";
+import { Controller, useForm } from "react-hook-form";
 import { useDispatch } from "react-redux";
 import Swal from "sweetalert2";
 import addContentData from "../../../redux/thunk/Contents/addContentData";
@@ -8,6 +8,7 @@ const AddContent = () => {
   const dispatch = useDispatch();
   const {
     reset,
+    control,
     register,
     handleSubmit,
     formState: { errors },
@@ -19,6 +20,8 @@ const AddContent = () => {
       img: data.img,
       title: data.title,
       desc: data.desc,
+      status: data.status,
+      brand: data.brand,
     };
     console.log(content);
     dispatch(addContentData(content));
@@ -53,6 +56,15 @@ const AddContent = () => {
           {errors.title && (
             <span className="text-red-600">Title is required</span>
           )}
+          <input
+            className="input input-bordered w-full mb-5"
+            type="text"
+            placeholder="Enter brand"
+            {...register("brand", { required: true })}
+          />
+          {errors.brand && (
+            <span className="text-red-600">Brand is required</span>
+          )}
           <textarea
             className="textarea textarea-bordered mb-5 h-40"
             placeholder="Enter your blog here"
@@ -61,8 +73,23 @@ const AddContent = () => {
           {errors.desc && (
             <span className="text-red-600">Your blog is required</span>
           )}
+          <label>
+            <Controller
+              control={control}
+              name="status"
+              defaultValue={false}
+              rules={{ required: false }}
+              render={({ field }) => (
+                <input className="checkbox" type="checkbox" {...field} />
+              )}
+            />
+            I agree to the terms and conditions
+          </label>
+          {/* {errors.status && (
+            <span className="text-red-600">Title is required</span>
+          )} */}
           <button className="" type="submit">
-            Delete
+            ADD
           </button>
         </form>
       </div>

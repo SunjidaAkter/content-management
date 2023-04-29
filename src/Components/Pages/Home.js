@@ -15,6 +15,29 @@ function Home() {
   useEffect(() => {
     dispatch(getContentData());
   }, [dispatch]);
+  let content;
+
+  if (contents.length) {
+    content = contents.map((content) => (
+      <Card key={content.id} content={content}></Card>
+    ));
+  }
+  if (contents.length && (filters.stock || filters.brands.length)) {
+    content = contents
+      .filter((content) => {
+        if (filters.stock) {
+          return content.status === true;
+        }
+        return content;
+      })
+      .filter((content) => {
+        if (filters.brands.length) {
+          return filters.brands.includes(content.brand);
+        }
+        return content;
+      })
+      .map((content) => <Card key={content.id} content={content}></Card>);
+  }
   console.log(filters);
   return (
     <div className="App px-12 pb-5">
@@ -46,9 +69,7 @@ function Home() {
       </div>
       <p className="text-4xl p-10">HELLO</p>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-14">
-        {contents.map((content) => (
-          <Card key={content.id} content={content}></Card>
-        ))}
+        {content}
       </div>
     </div>
   );
