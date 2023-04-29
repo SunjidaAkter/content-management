@@ -45,7 +45,7 @@ function Home() {
         <button
           onClick={() => dispatch(toggleStock())}
           className={`${
-            filters.stock ? "bg-slate-600" : "bg-red-600"
+            filters.stock ? "bg-red-600" : "bg-slate-600"
           } text-white rounded-md px-3 py-1 mt-3 ml-5`}
         >
           stock
@@ -53,7 +53,7 @@ function Home() {
         <button
           onClick={() => dispatch(toggleBrand("trendy"))}
           className={`${
-            filters.brands.includes("trendy") ? "bg-slate-600" : "bg-red-600"
+            filters.brands.includes("trendy") ? "bg-red-600" : "bg-slate-600"
           } text-white rounded-md px-3 py-1 mt-3 ml-5`}
         >
           trendy
@@ -61,7 +61,7 @@ function Home() {
         <button
           onClick={() => dispatch(toggleBrand("popular"))}
           className={`${
-            filters.brands.includes("popular") ? "bg-slate-600" : "bg-red-600"
+            filters.brands.includes("popular") ? "bg-red-600" : "bg-slate-600"
           } text-white rounded-md px-3 py-1 mt-3 ml-5`}
         >
           popular

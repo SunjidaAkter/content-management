@@ -27,12 +27,14 @@ const Card = ({ content }) => {
           </div>
           <h1 className="font-bold text-4xl text-center">{content.title}</h1>
           <p className="text-center font-semibold mb-3">{content.desc}</p>
-          <button
-            className="text-white font-bold my-3 p-4 bg-zinc-500 w-1/2"
-            onClick={() => dispatch(deleteContentData(content._id))}
-          >
-            Delete
-          </button>
+          <div className="flex justify-center">
+            <button
+              className="text-white font-bold my-3 p-3 rounded-md bg-zinc-500 w-1/2"
+              onClick={() => dispatch(deleteContentData(content._id))}
+            >
+              Delete
+            </button>
+          </div>
         </div>
       }
     </XyzTransition>
