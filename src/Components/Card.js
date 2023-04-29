@@ -18,6 +18,13 @@ const Card = ({ content }) => {
           <div className="h-52 w-full mx-auto">
             <img src={content.img} alt="girl" />
           </div>
+          <div className="mt-4 py-3">
+            <button
+              className={`${content.brand ? "badge badge-neutral" : "bg-none"}`}
+            >
+              {content?.brand}
+            </button>
+          </div>
           <h1 className="font-bold text-4xl text-center">{content.title}</h1>
           <p className="text-center font-semibold mb-3">{content.desc}</p>
           <button

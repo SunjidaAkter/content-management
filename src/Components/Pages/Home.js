@@ -5,26 +5,43 @@ import { useEffect, useState } from "react";
 import { XyzTransition } from "@animxyz/react";
 import "@animxyz/core";
 import getContentData from "../../redux/thunk/Contents/getContents";
+import { toggleBrand, toggleStock } from "../../redux/actions/filterActions";
 
 function Home() {
   const dispatch = useDispatch();
   const state = useSelector((state) => state);
   const contents = useSelector((state) => state.content.contents);
+  const filters = useSelector((state) => state.filter.filters);
   useEffect(() => {
     dispatch(getContentData());
   }, [dispatch]);
-  console.log(state);
+  console.log(filters);
   return (
     <div className="App px-12 pb-5">
       <div className="flex justify-end">
-        <button className="bg-slate-600 text-white rounded-md px-3 py-1 mt-3 ml-5">
-          hello
+        <button
+          onClick={() => dispatch(toggleStock())}
+          className={`${
+            filters.stock ? "bg-slate-600" : "bg-red-600"
+          } text-white rounded-md px-3 py-1 mt-3 ml-5`}
+        >
+          stock
         </button>
-        <button className="bg-slate-600 text-white rounded-md px-3 py-1 mt-3 ml-5">
-          hello
+        <button
+          onClick={() => dispatch(toggleBrand("trendy"))}
+          className={`${
+            filters.brands.includes("trendy") ? "bg-slate-600" : "bg-red-600"
+          } text-white rounded-md px-3 py-1 mt-3 ml-5`}
+        >
+          trendy
         </button>
-        <button className="bg-slate-600 text-white rounded-md px-3 py-1 mt-3 ml-5">
-          hello
+        <button
+          onClick={() => dispatch(toggleBrand("popular"))}
+          className={`${
+            filters.brands.includes("popular") ? "bg-slate-600" : "bg-red-600"
+          } text-white rounded-md px-3 py-1 mt-3 ml-5`}
+        >
+          popular
         </button>
       </div>
       <p className="text-4xl p-10">HELLO</p>
